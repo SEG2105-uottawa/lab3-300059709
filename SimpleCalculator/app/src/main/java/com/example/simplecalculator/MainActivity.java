@@ -133,6 +133,13 @@ public class MainActivity extends AppCompatActivity {
                 CURRENT_ACTION = '0';
             }
         });
+
+        binding.buttonClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.editText.setText("");
+            }
+        });
     }
     private void computeCalculation() {
         if(!Double.isNaN(valueOne)) {
